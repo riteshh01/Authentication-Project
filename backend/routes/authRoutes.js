@@ -6,4 +6,7 @@ const router = express.Router();
 router.post("/register", registerUser);
 router.post("/login", loginUser);
 
+// 🔐 Protected route
+router.get("/dashboard", authMiddleware, getMe);
+
 export default router;

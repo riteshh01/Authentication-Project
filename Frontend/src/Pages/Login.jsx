@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Lock, User, ArrowRight } from "lucide-react"; // Icons for professional look
+import { Mail, Lock, User, ArrowRight } from "lucide-react";
 
 const Login = () => {
     const [formData, setFormData] = useState({

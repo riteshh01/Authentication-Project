@@ -83,3 +83,10 @@ export const loginUser = async (req, res) => {
     res.status(500).json({ message: "Server error" });
   }
 };
+
+
+
+export const getMe = async (req, res) => {
+  const user = await User.findById(req.userId).select("-password");
+  res.json(user);
+};

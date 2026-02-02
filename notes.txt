@@ -1,0 +1,1 @@
+Client → API → Middleware → Controller → DB → Response
